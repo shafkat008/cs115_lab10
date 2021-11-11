@@ -20,12 +20,12 @@ struct Student
 };
 
 void inputStudent(Student* stuPtr);   // function prototype for inputting
-                                   // function prototype for printing
+                                      // function prototype for printing
 
 //*********************** Main Function ************************//
 int main ()
 {
-  Student stu;		         // instantiating a Student object
+  Student stu;		             // instantiating a Student object
   Student* studentPtr = &stu;  // defining a pointer for the Student object
 
   // NOTE: you could send studentPtr OR &stu, both refer to the same address!

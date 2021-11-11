@@ -19,15 +19,16 @@ struct Student
   int mark[3];
 };
 
-void inputStudent(Student* ptr);   // function prototype for inputting
+void inputStudent(Student* stuPtr);   // function prototype for inputting
                                    // function prototype for printing
 
 //*********************** Main Function ************************//
 int main ()
 {
   Student stu;		         // instantiating a Student object
-  Student* stuPtr = &stu;  // defining a pointer for the Student object
+  Student* studentPtr = &stu;  // defining a pointer for the Student object
 
+  // NOTE: you could send studentPtr OR &stu, both refer to the same address!
   inputStudent(&stu);	     // inputting from the keyboard into the instance
                      	     // printing the object
 
